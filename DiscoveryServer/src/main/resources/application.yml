@@ -2,6 +2,8 @@ eureka:
   environment: ${environment}
   datacenter: ${dataCenter}
   enableSelfPreservation: false
+  server:
+    eviction-interval-timer-in-ms: 1000
   client:
     registerWithEureka: false
     fetchRegistry: false
